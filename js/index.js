@@ -13,9 +13,12 @@ const check = function () {
 const save = function () {
   // seleziono il valore del campo input
   let utente = document.getElementById("utente").value;
-  //cambio il valore di utente situato in localStorage con il valore dell'input immesso
-  localStorage.setItem("utente", utente);
-
+  if (utente) {
+    //cambio il valore di utente situato in localStorage con il valore dell'input immesso
+    localStorage.setItem("utente", utente);
+  } else {
+    alert("Inserisci un nome");
+  }
   check();
   //resetto il campo
   document.getElementById("utente").value = "";
