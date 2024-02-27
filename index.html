@@ -13,30 +13,31 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="timer"></p>
-    <div class="title"></div>
-    <form>
-      <input type="text" id="utente" placeholder="Inserisci il tuo nome..." />
-      <button id="log_btn" onclick="save()">Login</button>
-      <button id="delete_btn" onclick="deleteData()">Delete data</button>
-    </form>
+    <!-- <form> -->
+    <!-- <input type="text" id="utente" placeholder="Inserisci il tuo nome..." /> -->
+    <!-- <button id="log_btn" onclick="save()">Login</button> -->
+    <!-- <button id="delete_btn" onclick="deleteData()">Delete data</button> -->
+    <!-- </form> -->
 
-    <div class="contanier p-5">
+    <div class="contanier p-5 d-flex justify-content-center">
       <form>
-        <div class="mb-3 col-4">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
+        <h1>Login Utente</h1>
+
+        <div class="title"></div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" />
+          <input
+            type="text"
+            class="form-control"
+            id="utente"
+            placeholder="Inserisci il tuo nome..."
+            aria-describedby="emailHelp"
+          />
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button id="log_btn" onclick="save()" class="btn btn-primary">Login</button>
+        <button id="delete_btn" onclick="deleteData()" class="btn btn-primary">Delete data</button>
+
+        <p class="mt-3" id="timer"></p>
       </form>
     </div>
     <script

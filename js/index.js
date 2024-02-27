@@ -27,7 +27,7 @@ let i = sessionStorage.getItem("count") ? parseInt(sessionStorage.getItem("count
 
 const conta = function () {
   i = i + 1;
-  document.getElementById("timer").innerText = i + " secondi di sessione aperta";
+  document.getElementById("timer").innerText = "Sessione aperta da: " + i + " secondi";
   sessionStorage.setItem("count", i);
 };
 
